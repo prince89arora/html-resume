@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import PersonalInfo from '../_data/_personl-info';
-import SocialLinkList from './social-links/sociallinks';
+import PersonalInfo from '../../_data/_personl-info';
+import SocialLinkList from '../social-links/sociallinks';
+import './style.css';
 
 class Header extends Component {
 
