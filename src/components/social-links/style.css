@@ -1,0 +1,8 @@
+.social_link_item {
+    margin-right: 3%;
+    display: inline-block; 
+}
+
+.social_link_item:last-child {
+    margin-right: 0;
+}

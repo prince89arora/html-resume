@@ -1,12 +1,14 @@
 import React, { Component } from "react";
+import PersonalInfo from '../_data/_personl-info';
+import SocialLinkList from './social-links/sociallinks';
 
 class Header extends Component {
 
     state = {
-        title: "Full Stack Engineer",
-        name: "Prince Arora",
-        phone: ["+91 8745031662"],
-        email: ["prnc.arora0@gmail.com", "aroraprince151@gmail.com"] 
+        title: PersonalInfo.title,
+        name: PersonalInfo.name,
+        phone: PersonalInfo.phone,
+        email: PersonalInfo.email
     }
 
     render() {
@@ -15,13 +17,13 @@ class Header extends Component {
             <div className="container">
                 <div className="row">
                     <div className="col-6">
-                        <div className="resume_header_name">
+                        <div className="resume_header_name text-left">
                             <h2>{this.state.name}</h2>
                             <p>{this.state.title}</p>
                         </div>
                     </div>
                     <div className="col-6">
-                        <div className="resume_header_contact">
+                        <div className="resume_header_contact text-right">
                             <ul>
                                 <li>
                                     {this.state.phone.map((item, index) => {
@@ -39,6 +41,7 @@ class Header extends Component {
                                 </li>
                             </ul>
                         </div>
+                        <SocialLinkList></SocialLinkList>
                     </div>
                 </div>
             </div>
