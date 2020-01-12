@@ -1,9 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import './style';
+import Base from './components/app';
 
-ReactDOM.render(<App />, document.getElementById('resume_root'));
-
-serviceWorker.unregister();
+export default Base;

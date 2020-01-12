@@ -1,7 +1,0 @@
-ul {
-  list-style: none;
-}
-
-.with_saperator_prefix::before {
-  content: " | ";
-}
